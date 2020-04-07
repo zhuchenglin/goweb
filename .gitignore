@@ -15,4 +15,4 @@
 # vendorInstall/
 /vendor
 .idea
-
+/log

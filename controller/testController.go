@@ -6,7 +6,6 @@ import (
 )
 
 type TestController struct {
-	BaseController
 }
 
 func (t *TestController) Test(w http.ResponseWriter, r *http.Request) {
