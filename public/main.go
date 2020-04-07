@@ -19,6 +19,6 @@ func Start() {
 	app.Controllers = controllers
 	err := http.ListenAndServe("localhost:8080", app)
 	if err != nil {
-		log.Fatal("ListenAndServe: ", err)
+		log.Println("ListenAndServe: ", err)
 	}
 }

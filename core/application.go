@@ -30,10 +30,16 @@ func (app *Application) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	control := app.Controllers[controlString]
-	_, err := CallFuncByName(control, methodString, w, r)
+	var result chan interface{} = make(chan interface{})
+	go func() {
+		_, err := CallFuncByName(control, methodString, w, r)
+		result <- err
+	}()
+	err := <-result
+	close(result)
 	if err != nil {
 		log.Println("路由：" + r.URL.Path + "执行有误")
-		log.Fatal(err)
+		log.Println(err)
 		return
 	}
 
