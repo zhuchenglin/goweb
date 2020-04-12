@@ -5,7 +5,6 @@ import "goweb/controller"
 var routers = map[string]string{
 	// 示例  请求类型@控制器@方法
 	"/test":   "get@TestController@Test",
-	"/testee": "get@TestController@Testyy",
 }
 
 var controllers = map[string]interface{}{
