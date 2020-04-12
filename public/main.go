@@ -1,10 +1,10 @@
 package main
 
 import (
+	"goweb/core"
+	"goweb/route"
 	"log"
 	"net/http"
-	"warehouse/core"
-	"warehouse/route"
 )
 
 func main() {
