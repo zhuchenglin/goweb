@@ -1,4 +1,4 @@
-module warehouse
+module goweb
 
 go 1.13
 
