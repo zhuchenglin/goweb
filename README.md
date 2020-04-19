@@ -3,17 +3,11 @@
 author: Wisdomlin
 
 框架组成：
-1. 数据库orm采用gorm  文档地址 https://gorm.io/zh_CN/docs/connecting_to_the_database.html
-
-
+1. //  数据库orm采用gorm  文档地址 https://gorm.io/zh_CN/docs/connecting_to_the_database.html
 
 
 
 使用注意：
-1. 如需修改项目名称，除了将项目文件夹名称修改外，还需要修改文件中 import 地方对应的 名称（可以全局搜索进行修改）
-    1. public/main.go
-    2. route.go
-    3. go.mod 文件 module 
-    4. 删除 go.sum
-
+1. 因为 gorm里面需要 crypto库，这个库的地址被墙了，需要 在 vendor/pkg/mod/cache/download/golang.org/x 中 
+    git clone  https://github.com/golang/crypto.git
     

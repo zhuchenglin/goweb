@@ -16,4 +16,5 @@
 /vendor
 .idea
 /log
+go.sum
 
