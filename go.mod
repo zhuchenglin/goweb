@@ -1,4 +1,4 @@
-module goweb
+module Wisdomlin/goweb
 
 // author Wisdomlin
 // email mrzhuchenglin@163.com

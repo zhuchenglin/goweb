@@ -1,8 +1,8 @@
 package main
 
 import (
-	"goweb/core"
-	"goweb/route"
+	"Wisdomlin/goweb/core"
+	"Wisdomlin/goweb/route"
 	"log"
 	"net/http"
 )

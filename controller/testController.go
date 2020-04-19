@@ -1,8 +1,8 @@
 package controller
 
 import (
+	"Wisdomlin/goweb/models"
 	"fmt"
-	"goweb/models"
 	"net/http"
 )
 
